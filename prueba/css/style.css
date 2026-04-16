@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1a1a1a; /* Gris muy oscuro */
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.cv-paper {
+    width: 850px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.3); /* Resplandor azul */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(90deg, #001f3f 0%, #0074D9 100%);
+    color: white;
+    border-bottom: 6px solid #00d4ff;
+}
+
+.photo-container {
+    width: 140px;
+    height: 140px;
+    border: 4px solid #00d4ff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 35px;
+    background: #fff;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-info h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.header-info p {
+    font-size: 18px;
+    color: #00d4ff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 35%;
+    background-color: #f1f4f8;
+    padding: 30px 20px;
+    border-right: 2px solid #0074D9;
+}
+
+.sidebar h2 {
+    color: #001f3f;
+    font-size: 18px;
+    border-left: 5px solid #00d4ff;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.content {
+    width: 65%;
+    padding: 30px 40px;
+}
+
+.content h2 {
+    color: #0074D9;
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid #00d4ff;
+}
+
+.experience-item strong {
+    font-size: 16px;
+    color: #333;
+}
+
+.experience-item span {
+    display: block;
+    color: #0074D9;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer-contact {
+    background-color: #001f3f;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 14px;
+}
+
+ul { list-style: none; }
+li { margin-bottom: 10px; font-size: 14px; color: #444; }
+li::before { content: "⚡ "; color: #00d4ff; }
